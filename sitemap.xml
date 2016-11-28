@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yongrong.github.io/2016/11/28/LeetCode-460-LFU-Cache/</loc>
+    
+    <lastmod>2016-11-28T10:56:17.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yongrong.github.io/about/index.html</loc>
+    
+    <lastmod>2016-11-28T09:43:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yongrong.github.io/tags/index.html</loc>
     
     <lastmod>2016-11-28T09:23:32.000Z</lastmod>

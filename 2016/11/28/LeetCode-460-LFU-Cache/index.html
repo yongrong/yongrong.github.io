@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="test,hexo," />
+  <meta name="keywords" content="leetcode,LFU," />
 
 
 
@@ -86,16 +86,22 @@
 
 
 
-<meta name="description" content="这是新的开始，我用hexo创建了第一篇文章。">
+<meta name="description" content="LeetCode: 460. LFU Cache
+Design and implement a data structure for Least Frequently Used (LFU) cache. It should support the following operations: get and set.
+get(key) - Get the value (will always be">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://yongrong.github.io/2016/11/28/test/index.html">
+<meta property="og:title" content="LeetCode: 460.LFU Cache">
+<meta property="og:url" content="http://yongrong.github.io/2016/11/28/LeetCode-460-LFU-Cache/index.html">
 <meta property="og:site_name" content="Yongong's Blog">
-<meta property="og:description" content="这是新的开始，我用hexo创建了第一篇文章。">
-<meta property="og:updated_time" content="2016-11-28T08:58:36.000Z">
+<meta property="og:description" content="LeetCode: 460. LFU Cache
+Design and implement a data structure for Least Frequently Used (LFU) cache. It should support the following operations: get and set.
+get(key) - Get the value (will always be">
+<meta property="og:updated_time" content="2016-11-28T10:56:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="这是新的开始，我用hexo创建了第一篇文章。">
+<meta name="twitter:title" content="LeetCode: 460.LFU Cache">
+<meta name="twitter:description" content="LeetCode: 460. LFU Cache
+Design and implement a data structure for Least Frequently Used (LFU) cache. It should support the following operations: get and set.
+get(key) - Get the value (will always be">
 
 
 
@@ -116,10 +122,10 @@
 
 
 
-  <link rel="canonical" href="http://yongrong.github.io/2016/11/28/test/"/>
+  <link rel="canonical" href="http://yongrong.github.io/2016/11/28/LeetCode-460-LFU-Cache/"/>
 
 
-  <title> test | Yongong's Blog </title>
+  <title> LeetCode: 460.LFU Cache | Yongong's Blog </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -259,7 +265,7 @@
             
             
               
-                test
+                LeetCode: 460.LFU Cache
               
             
           </h1>
@@ -271,38 +277,19 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-28T14:56:31+08:00" content="2016-11-28">
+            <time itemprop="dateCreated" datetime="2016-11-28T18:21:50+08:00" content="2016-11-28">
               2016-11-28
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/日志/" itemprop="url" rel="index">
-                    <span itemprop="name">日志</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/28/test/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/28/test/" itemprop="commentsCount"></span>
+                <a href="/2016/11/28/LeetCode-460-LFU-Cache/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/28/LeetCode-460-LFU-Cache/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -312,7 +299,7 @@
 
           
           
-             <span id="/2016/11/28/test/" class="leancloud_visitors" data-flag-title="test">
+             <span id="/2016/11/28/LeetCode-460-LFU-Cache/" class="leancloud_visitors" data-flag-title="LeetCode: 460.LFU Cache">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -334,8 +321,15 @@
       
 
       
-        <p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章。</p>
-
+        <p><a href="https://leetcode.com/problems/lfu-cache/" target="_blank" rel="external"><strong>LeetCode: 460. LFU Cache</strong></a></p>
+<p>Design and implement a data structure for <a href="https://en.wikipedia.org/wiki/Least_frequently_used" target="_blank" rel="external">Least Frequently Used (LFU)</a> cache. It should support the following operations: <strong>get</strong> and <strong>set</strong>.</p>
+<p><strong>get(key)</strong> - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.</p>
+<p><strong>set(key, value)</strong> - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least frequently used item before inserting a new item. For the purpose of this problem, when there is a tie (i.e., two or more keys that have the same frequency), the least <strong>recently</strong> used key would be evicted.</p>
+<p><strong>Follow up:</strong><br>Could you do both operations in <strong>O(1)</strong> time complexity?</p>
+<p><strong>Example:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">LFUCache cache = new LFUCache( 2 /* capacity */ );</div><div class="line"></div><div class="line">cache.Set(1, 1);</div><div class="line">cache.Set(2, 2);</div><div class="line">cache.Get(1);       // returns 1</div><div class="line">cache.Set(3, 3);    // evicts key 2</div><div class="line">cache.Get(2);       // returns -1 (not found)</div><div class="line">cache.Get(3);       // returns 3.</div><div class="line">cache.Set(4, 4);    // evicts key 1.</div><div class="line">cache.Get(1);       // returns -1 (not found)</div><div class="line">cache.Get(3);       // returns 3</div><div class="line">cache.Get(4);       // returns 4</div></pre></td></tr></table></figure>
+<p>我的解决方案，使用<strong>golang</strong>，cache数据使用<strong>map</strong>存储，访问平率frequency使用双链表存储，<strong>get</strong>操作复杂度为<strong>O(1)</strong>，<strong>set</strong>操作为<strong>O(N)</strong></p>
+<figure class="highlight golang"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">type</span> DoubleLinkedList <span class="keyword">struct</span> &#123;</div><div class="line">    Key       <span class="keyword">int</span> </div><div class="line">    Frequency <span class="keyword">int</span> </div><div class="line">    Prev      *DoubleLinkedList</div><div class="line">    Next      *DoubleLinkedList</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">type</span> LFUCache <span class="keyword">struct</span> &#123;</div><div class="line">    kv       <span class="keyword">map</span>[<span class="keyword">int</span>]<span class="keyword">int</span></div><div class="line">    head     *DoubleLinkedList</div><div class="line">    capacity <span class="keyword">int</span> </div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">Constructor</span><span class="params">(capacity <span class="keyword">int</span>)</span> <span class="title">LFUCache</span></span> &#123;</div><div class="line">    <span class="keyword">var</span> cache LFUCache</div><div class="line">    cache.kv = <span class="built_in">make</span>(<span class="keyword">map</span>[<span class="keyword">int</span>]<span class="keyword">int</span>)</div><div class="line">    cache.head = &amp;DoubleLinkedList&#123;<span class="number">0</span>, <span class="number">0</span>, <span class="literal">nil</span>, <span class="literal">nil</span>&#125;</div><div class="line">    cache.head.Prev = cache.head</div><div class="line">    cache.head.Next = cache.head</div><div class="line">    cache.capacity = capacity</div><div class="line">    <span class="keyword">return</span> cache</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="params">(this *LFUCache)</span> <span class="title">AddFrequency</span><span class="params">(key <span class="keyword">int</span>)</span></span> &#123;</div><div class="line">    <span class="keyword">for</span> p := this.head.Next; p != this.head; p = p.Next &#123;</div><div class="line">        <span class="keyword">if</span> p.Key == key &#123;</div><div class="line">            p.Next.Prev = p.Prev</div><div class="line">            p.Prev.Next = p.Next</div><div class="line"></div><div class="line">            p.Frequency++</div><div class="line">            p.Prev = this.head.Prev</div><div class="line">            p.Next = this.head</div><div class="line">            this.head.Prev.Next = p </div><div class="line">            this.head.Prev = p </div><div class="line">            <span class="keyword">return</span></div><div class="line">        &#125;   </div><div class="line">    &#125;</div><div class="line">    node := &amp;DoubleLinkedList&#123;key, <span class="number">1</span>, this.head.Prev, this.head&#125;</div><div class="line">    this.head.Prev.Next = node</div><div class="line">    this.head.Prev = node</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="params">(this *LFUCache)</span> <span class="title">RemoveMinFrequency</span><span class="params">()</span></span> &#123;</div><div class="line">    <span class="keyword">if</span> this.head.Next == this.head &#123;</div><div class="line">        <span class="keyword">return</span></div><div class="line">    &#125;</div><div class="line">    node := this.head.Next</div><div class="line">    min := node.Frequency</div><div class="line"></div><div class="line">    <span class="keyword">for</span> p := node.Next; p != this.head; p = p.Next &#123;</div><div class="line">        <span class="keyword">if</span> p.Frequency &lt; min &#123;</div><div class="line">            node = p</div><div class="line">            min = p.Frequency</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">delete</span>(this.kv, node.Key)</div><div class="line">    node.Next.Prev = node.Prev</div><div class="line">    node.Prev.Next = node.Next</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="params">(this *LFUCache)</span> <span class="title">Get</span><span class="params">(key <span class="keyword">int</span>)</span> <span class="title">int</span></span> &#123;</div><div class="line">    value, ok := this.kv[key]</div><div class="line">    <span class="keyword">if</span> ok &#123;</div><div class="line">        this.AddFrequency(key)</div><div class="line">        <span class="keyword">return</span> value</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">-1</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="params">(this *LFUCache)</span> <span class="title">Set</span><span class="params">(key <span class="keyword">int</span>, value <span class="keyword">int</span>)</span></span> &#123;</div><div class="line">    <span class="keyword">if</span> this.capacity == <span class="number">0</span> &#123;</div><div class="line">        <span class="keyword">return</span></div><div class="line">    &#125;</div><div class="line">    _, ok := this.kv[key]</div><div class="line">    <span class="keyword">if</span> !ok &amp;&amp; <span class="built_in">len</span>(this.kv) == this.capacity &#123;</div><div class="line">        this.RemoveMinFrequency()</div><div class="line">    &#125;</div><div class="line">    this.kv[key] = value</div><div class="line">    this.AddFrequency(key)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -357,9 +351,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/test/" rel="tag">#test</a>
+            <a href="/tags/leetcode/" rel="tag">#leetcode</a>
           
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
+            <a href="/tags/LFU/" rel="tag">#LFU</a>
           
         </div>
       
@@ -368,17 +362,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/21/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2016/11/28/test/" rel="next" title="test">
+                <i class="fa fa-chevron-left"></i> test
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/28/LeetCode-460-LFU-Cache/" rel="prev" title="LeetCode: 460.LFU Cache">
-                LeetCode: 460.LFU Cache <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -404,8 +394,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/28/test/"
-           data-title="test" data-url="http://yongrong.github.io/2016/11/28/test/">
+      <div class="ds-thread" data-thread-key="2016/11/28/LeetCode-460-LFU-Cache/"
+           data-title="LeetCode: 460.LFU Cache" data-url="http://yongrong.github.io/2016/11/28/LeetCode-460-LFU-Cache/">
       </div>
     
   </div>
